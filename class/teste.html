@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>When you enter the input field (child of FORM), a function is triggered which sets the background color to yellow. When you leave the input field, a function is triggered which removes the background color.</p>
+
+<form id="myForm">
+  <input type="text" id="myInput">
+  <input type="text" id="myInput2">
+  <input type="text" id="myInput3">
+  <input type="text" id="myInput4">
+  <input type="text" id="myInput5">
+  <input type="text" id="myInput6">
+  <input type="text" id="myInput7">
+  <input type="text" id="myInput8">
+</form>
+
+<script>
+var x = document.getElementById("myForm");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementById("myInput").style.backgroundColor = "yellow";
+    document.getElementById("myInput2").style.backgroundColor = "yellow";
+    document.getElementById("myInput3").style.backgroundColor = "yellow";
+    document.getElementById("myInput4").style.backgroundColor = "yellow";
+    document.getElementById("myInput5").style.backgroundColor = "yellow";
+    
+}
+
+function myBlurFunction() {
+  document.getElementById("myInput").style.backgroundColor = ""; 
+    document.getElementById("myInput1").style.backgroundColor = "";  
+    document.getElementById("myInput2").style.backgroundColor = "";  
+    document.getElementById("myInput3").style.backgroundColor = "";  
+    document.getElementById("myInput4").style.backgroundColor = "";  
+}
+</script>
+
+</body>
+</html>

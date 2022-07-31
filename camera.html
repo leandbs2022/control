@@ -1,0 +1,14 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+    <input type="file" accept="image/*" capture="camera">
+<script>
+   if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+    const videoStream = await navigator.mediaDevices.getUserMedia({ video: true })
+   }
+</script>
+
+</body>
+</html>
